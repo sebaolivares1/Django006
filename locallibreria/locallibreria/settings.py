@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '31mzl+&*uer=pw09ez7bb(ei&^t6n8m1&+0xe^5l64m_q^!a92'
+SECRET_KEY = 'hk%g2#!ru@nq31ibbtlh(3ij-5f(2b6%%lo^jvp)en%rsd(u(z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalogo',
+    'catalogo.apps.CatalogoConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'locallibreria.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['./templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
